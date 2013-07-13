@@ -9,6 +9,16 @@ app.get('/', function(request, response) {
 
 var buffer = new buffer(18);
 buffer = fs.readFileSync(index.html);
+
+
+
+app.get('/', function(request, response) {
+  response.send(buffer.toString('utf-8'));
+});
+
+
+
+
 buffer.toString('utf-8');
 
 
