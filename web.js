@@ -1,10 +1,10 @@
-var express = require('express');
 
+
+var fs = require('fs');
+var express = require('express');
 var app = express.createServer(express.logger());
 
-app.get('/', function(request, response) {
-  response.send('pizda rulyu');
-});
+app.get('/', function(request, response) {response.send('pizda rulyu');});
 
 
 var buffer = new buffer(18);
